@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/rayblood/static/css/main.0d566479.css",
-    "main.js": "/rayblood/static/js/main.accdf279.js",
+    "main.css": "/rayblood/static/css/main.eab22c2a.css",
+    "main.js": "/rayblood/static/js/main.4bf7a6cc.js",
+    "static/media/3d-card.png": "/rayblood/static/media/3d-card.0df79d796af183e68394.png",
+    "static/media/FuturaPTLight.otf": "/rayblood/static/media/FuturaPTLight.725c77b4e125ed776783.otf",
     "static/media/logo.svg": "/rayblood/static/media/logo.ccc35e6d4b0ee9a4562143a661f4b412.svg",
     "index.html": "/rayblood/index.html",
-    "main.0d566479.css.map": "/rayblood/static/css/main.0d566479.css.map",
-    "main.accdf279.js.map": "/rayblood/static/js/main.accdf279.js.map"
+    "main.eab22c2a.css.map": "/rayblood/static/css/main.eab22c2a.css.map",
+    "main.4bf7a6cc.js.map": "/rayblood/static/js/main.4bf7a6cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d566479.css",
-    "static/js/main.accdf279.js"
+    "static/css/main.eab22c2a.css",
+    "static/js/main.4bf7a6cc.js"
   ]
 }
