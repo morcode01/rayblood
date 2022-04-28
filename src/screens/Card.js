@@ -3,29 +3,24 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import homeCard from '../images/3d-card.png';
 
-function Home() {
+function Card() {
   return (
     <div className="home-container">
       <div className="home-banner">
-        <Container>
-          <Row>
-            <Col md={7}>
-              <div>
-                <h2>
-                  Encontre aqui o seu cartão de irradiação da Doença do Enxerto Contra o Hospedeiro Associada à Transfusão
-                </h2>
-                <Button variant="secondary">
-                  Obter cartão
-                </Button>
-                <a href="#" className="link-text">Quero saber mais sobre esta doença</a>
-              </div>
-            </Col>
-            <Col md={5}>
-              <img src={homeCard} className="home-card" alt="card" />
-            </Col>
-          </Row>
+        <Container className="card-container">
+          <div className="card-user-number">
+            <label>Número de utente</label>
+            <input type="text" placeholder="000 000 000"/>
+          </div>
+          <div className="card-pin-number">
+            <label>Número de pin</label>
+            <input type="tel" maxlength="4"/>
+            <div className="pin-number-square-1"></div>
+            <div className="pin-number-square-2"></div>
+            <div className="pin-number-square-3"></div>
+            <div className="pin-number-square-4"></div>
+          </div>
         </Container>
       </div>
       <div className="home-intro">
@@ -51,4 +46,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Card;
