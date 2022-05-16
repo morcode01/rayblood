@@ -1,3 +1,4 @@
+import React from 'react';
 import '../index.css';
 import logo from '../images/logo.svg';
 import Container from 'react-bootstrap/Container';
@@ -6,21 +7,28 @@ import {
 	Link
   } from "react-router-dom";
 
-function Header() {
-  return (
-    <Navbar className="navbar-header" expand="lg">
-      <Container>
-        <Navbar.Brand href="#"><Link to="/"><img src={logo} className="header-logo" alt="logo" /></Link></Navbar.Brand>
-        <ul className="header-navbar">
-          <li className="header-navbar-item"><Link to="/card">Cartão irradiação</Link></li>
-          <li className="header-navbar-item"><a href="#">O que é RayBlood</a></li>
-          <li className="header-navbar-item"><a href="#">Web app no telemóvel</a></li>
-          <li className="header-navbar-item"><a href="#">Colocar uma questão</a></li>
-          <li className="header-navbar-item"><a href="#">Iniciar sessão</a></li>
-        </ul>
-      </Container>
-    </Navbar>
-  );
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
+
+  render() {
+    return (
+      <Navbar className="navbar-header" expand="lg">
+        <Container>
+          <div><Link to="/"><img src={logo} className="header-logo" alt="logo" /></Link></div>
+          <ul className="header-navbar">
+            <li className={'header-navbar-item ' + (window.location.pathname == '/card' ? "active" : "")}><Link to="/card">Cartão irradiação</Link></li>
+            <li className={'header-navbar-item ' + (window.location.pathname == '/' || window.location.pathname == '/rayblood' ? "active" : "")}><Link to="/">O que é RayBlood</Link></li>
+            <li className={'header-navbar-item ' + (window.location.pathname == '/webapp' ? "active" : "")}><a href="#">Web app no telemóvel</a></li>
+            <li className={'header-navbar-item ' + (window.location.pathname == '/question' ? "active" : "")}><Link to="/question">Colocar uma questão</Link></li>
+            <li className={'header-navbar-item ' + (window.location.pathname == '/login' ? "active" : "")}><Link to="/login">Iniciar Sessão</Link></li>
+          </ul>
+        </Container>
+      </Navbar>
+    );
+  }
 }
 
 export default Header;

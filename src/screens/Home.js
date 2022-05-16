@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import homeCard from '../images/3d-card.png';
+import bloodIcon from '../images/blood-icon.svg';
 
 function Home() {
   return (
@@ -43,6 +44,12 @@ function Home() {
               </Button>
             </Col>
             <Col md={6}>
+              <div className="blood-icon-container">
+                <div className="blood-icon-inner-container">
+                  <div className="red-circle"></div>
+                  <img src={bloodIcon} className="blood-icon"/>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>

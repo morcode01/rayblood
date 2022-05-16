@@ -4,6 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
+import {
+	Link
+  } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,14 +17,14 @@ function Footer() {
           </Col>
           <Col md={3}>
             <ul className="footer-navbar">
-              <li className="footer-navbar-item"><a href="#">Cartão irradiação</a></li>
+              <li className="footer-navbar-item"><Link to="/card">Cartão irradiação</Link></li>
               <li className="footer-navbar-item"><a href="#">Web app no telemóvel</a></li>
             </ul>
           </Col>
           <Col md={3}>
             <ul className="footer-navbar">
-              <li className="footer-navbar-item"><a href="#">O que é RayBlood</a></li>
-              <li className="footer-navbar-item"><a href="#">Colocar uma questão</a></li>
+              <li className="footer-navbar-item"><Link to="/">O que é RayBlood</Link></li>
+              <li className="footer-navbar-item"><Link to="/question">Colocar uma questão</Link></li>
             </ul>
           </Col>
           <Col md={3}>
@@ -32,7 +35,7 @@ function Footer() {
           </Col>
           <Col md={3}>
             <ul className="footer-navbar">
-              <li className="footer-navbar-item"><a href="#">Iniciar sessão</a></li>
+              <li className="footer-navbar-item"><Link to="/login">Iniciar Sessão</Link></li>
               <li className="footer-navbar-item"><a href="#">Registo profissionais</a></li>
             </ul>
           </Col>
