@@ -4,6 +4,7 @@ import Header from './template/Header';
 import Footer from './template/Footer';
 import Home from './screens/Home';
 import Card from './screens/Card';
+import ViewCard from './screens/ViewCard';
 import Question from './screens/Question';
 import Login from './screens/Login';
 import './Bootstrap/bootstrap.min.css';
@@ -36,6 +37,13 @@ root.render(
           <div>
             <Header />
             <Card />
+            <Footer />
+          </div>
+        } />
+        <Route exact path="/viewcard" element={
+          <div>
+            <Header />
+            <ViewCard />
             <Footer />
           </div>
         } />

@@ -5,8 +5,15 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import homeCard from '../images/3d-card.png';
 import bloodIcon from '../images/blood-icon.svg';
+import logo from '../images/logo.svg';
 
 function Home() {
+  function scrollEvent(e) {
+    e.preventDefault();
+    document.getElementById("home-intro").scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
   return (
     <div className="home-container">
       <div className="home-banner">
@@ -24,12 +31,24 @@ function Home() {
               </div>
             </Col>
             <Col md={5}>
-              <img src={homeCard} className="home-card" alt="card" />
+              <div id="created-card">
+                  <div className="card-top">
+                      <img src={logo} className="card-logo" alt="RayBlood"/>
+                      <p>Risco de desenvolver</p>
+                      <h2>Doença do Enxerto Contra o Hospedeiro Associado à Transfusão</h2>
+                  </div>
+                  <div className="card-bottom">
+                      <p>Se necessitar de uma transfusão de componentes sanguíneos (eritrócitos, plaquetas e granulócitos) eles <b>devem ser IRRADIADOS. Por favor informe o Serviço de Medicina Transfusional.</b></p>
+                  </div>
+              </div>
             </Col>
           </Row>
         </Container>
+        <button onClick={scrollEvent} className="btn-scroll">
+          Scroll <div></div>
+        </button>
       </div>
-      <div className="home-intro">
+      <div id="home-intro" className="home-intro">
         <Container>
           <Row>
             <Col md={6}>

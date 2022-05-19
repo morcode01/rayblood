@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../index.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import bloodIcon from '../images/blood-icon.svg';
+import Modal from 'react-bootstrap/Modal';
+import {
+	Link
+  } from "react-router-dom";
 
 const utilizeFocus2 = () => {
   const ref = React.createRef()
@@ -53,10 +57,14 @@ class Card extends React.Component {
               </div>
             </div>
             <div className="card-btn-container">
-              <a href="#" className="link-text">Quero saber mais sobre esta doença</a>
-              <Button variant="secondary">
-                Obter cartão
-              </Button>
+              <div>
+                <InfoModal/>
+              </div>
+              <Link to="/viewcard">
+                <Button variant="secondary">
+                  Obter cartão
+                </Button>
+              </Link>
             </div>
           </Container>
           
@@ -90,6 +98,39 @@ class Card extends React.Component {
       </div>
     );
   }
+}
+
+function InfoModal() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  return (
+    <>
+      <Button className="link-text-open-modal" onClick={handleShow}>
+        Recuperar pin
+      </Button>
+
+      <Modal show={show} onHide={handleClose} backdrop='static' id="recover-pin-modal" centered keyboard="False">
+        <Modal.Header closeButton>
+          <Modal.Title>Recuperar pin</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="card-user-number">
+            <label>Número de utente</label>
+            <input type="text" placeholder="000 000 000"/>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Cancelar
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Enviar
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
 }
 
 export default Card;
