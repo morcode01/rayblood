@@ -451,6 +451,7 @@ h3{
 }
 #created-card .card-bottom{
   padding: 20px;
+  background: #fff;
 }
 #created-card .card-bottom p{
   margin: 0;
@@ -537,6 +538,7 @@ transform: rotateY(180deg);
 }
 #created-card-back .card-info-container span{
   font-size:20px;
+  font-weight: bold;
 }
 #created-card-back .card-info-container-reason{
   padding: 5px 0;
@@ -560,12 +562,12 @@ transform: rotateY(180deg);
 }
 #created-card-back .card-info-container-reason span{
   font-size:20px;
-  font-weight:normal;
+  font-weight:bold;
   line-height: 1.9;
 }
 #created-card-back .label-red{
   color: #FF4B43;
-  font-weight: normal !important;
+  font-weight: bold !important;
   font-size:16px;
 }
 #created-card-back .label-gray{
@@ -609,4 +611,15 @@ transform: rotateY(180deg);
   text-decoration: underline;
   padding:0 !important;
   margin:0;
+}
+.card-error p{
+  width: 740px;
+  height: 64px;
+  margin: auto;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  color: #FF4B43;
+  font-weight: bold;
 }
