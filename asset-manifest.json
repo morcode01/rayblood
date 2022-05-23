@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/rayblood/static/css/main.b3bd4c57.css",
-    "main.js": "/rayblood/static/js/main.57c400a7.js",
+    "main.css": "/rayblood/static/css/main.d3d0d455.css",
+    "main.js": "/rayblood/static/js/main.103058cd.js",
     "static/media/3d-card.png": "/rayblood/static/media/3d-card.0df79d796af183e68394.png",
     "static/media/FuturaPTLight.otf": "/rayblood/static/media/FuturaPTLight.725c77b4e125ed776783.otf",
     "static/media/blood-icon.svg": "/rayblood/static/media/blood-icon.9b2c89af2e047f185d672328a7a400ef.svg",
     "static/media/logo.svg": "/rayblood/static/media/logo.ccc35e6d4b0ee9a4562143a661f4b412.svg",
     "index.html": "/rayblood/index.html",
-    "main.b3bd4c57.css.map": "/rayblood/static/css/main.b3bd4c57.css.map",
-    "main.57c400a7.js.map": "/rayblood/static/js/main.57c400a7.js.map"
+    "main.d3d0d455.css.map": "/rayblood/static/css/main.d3d0d455.css.map",
+    "main.103058cd.js.map": "/rayblood/static/js/main.103058cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3bd4c57.css",
-    "static/js/main.57c400a7.js"
+    "static/css/main.d3d0d455.css",
+    "static/js/main.103058cd.js"
   ]
 }
