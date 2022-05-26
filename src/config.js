@@ -1,6 +1,6 @@
 module.exports = global.config = {
-    apiUrl: 'https://hmdeveloper.com.pt/rayblood/api/',
-	uploadsPath: 'https://hmdeveloper.com.pt/rayblood/assets/uploads/',
-    adminUrl: 'https://hmdeveloper.com.pt/rayblood/'
+    apiUrl: 'https://admin.rayblood.pt/api/',
+	uploadsPath: 'https://admin.rayblood.pt/assets/uploads/',
+    adminUrl: 'https://admin.rayblood.pt/'
 };
 

@@ -139,10 +139,13 @@ class Card extends React.Component {
                 </div>
               </div>
               <div className="card-btn-container">
+                <Button variant="secondary" className="showMobile" onClick={() => this.openCard()}>
+                    Obter cartão
+                </Button>
                 <div>
                   <InfoModal/>
                 </div>
-                <Button variant="secondary" onClick={() => this.openCard()}>
+                <Button variant="secondary" className="hideMobile" onClick={() => this.openCard()}>
                     Obter cartão
                 </Button>
               </div>

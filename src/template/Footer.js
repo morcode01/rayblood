@@ -1,5 +1,6 @@
 import '../index.css';
 import logo from '../images/logo.svg';
+import logoFooter from '../images/logo-footer.svg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -44,7 +45,7 @@ function Footer() {
               <p>
                 © RayBlood.com, all rights reserved! By <a href="#">Dersepa.com</a>
               </p>
-              <img src={logo} className="footer-logo" alt="logo" />
+              <img src={logoFooter} className="footer-logo" alt="logo" />
             </div>
           </Col>
         </Row>
