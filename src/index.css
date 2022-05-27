@@ -31,6 +31,9 @@ form {
   display: flex;
   flex-direction: column;
 }
+input:focus{
+  outline: 0 !important;
+}
 
 .input-container:focus-within label {
   transform: translate(0, 0) scale(0.6);

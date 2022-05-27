@@ -12,6 +12,9 @@ import logo from '../images/logo.svg';
 import DOMPurify from 'dompurify';
 import axios from "axios";
 import $ from "jquery";
+import {
+	Link
+  } from "react-router-dom";
 
 class Home extends React.Component {
   constructor(props){
@@ -106,9 +109,11 @@ class Home extends React.Component {
                   <h2>
                     Encontre aqui o seu cartão de irradiação da Doença do Enxerto Contra o Hospedeiro Associada à Transfusão
                   </h2>
-                  <Button variant="secondary">
-                    Obter cartão
-                  </Button>
+                  <Link to="/card">
+                    <Button variant="secondary">
+                      Obter cartão
+                    </Button>
+                  </Link>
                   <a href="#" className="link-text">Quero saber mais sobre esta doença</a>
                 </div>
               </Col>
