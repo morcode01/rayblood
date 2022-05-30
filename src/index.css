@@ -827,11 +827,9 @@ transform: rotateY(180deg);
   }
   .home-banner .col-md-7 h2{
     font-size: 40px !important;
-    margin-top: 40px;
   }
   .home-banner .col-md-5 .showMobile{
     display: flex !important;
-    margin-bottom:40px;
   }
   .home-banner .col-md-5 .showMobile a{
     width: 50%;
@@ -885,5 +883,11 @@ transform: rotateY(180deg);
   }
   .header-logo{
     height: 80px;
+  }
+  .question-text {
+    width: 100%;
+  }
+  .home-banner {
+    padding-bottom:40px;
   }
 }
