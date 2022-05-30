@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/rayblood/static/css/main.a3df9160.css",
-    "main.js": "/rayblood/static/js/main.0e409655.js",
-    "static/media/3d-card.png": "/rayblood/static/media/3d-card.0df79d796af183e68394.png",
-    "static/media/FuturaPTLight.otf": "/rayblood/static/media/FuturaPTLight.725c77b4e125ed776783.otf",
-    "static/media/rayblood-card.jpg": "/rayblood/static/media/rayblood-card.3be37c6c619a3d2e7d4d.jpg",
-    "static/media/blood-icon.svg": "/rayblood/static/media/blood-icon.9b2c89af2e047f185d672328a7a400ef.svg",
-    "static/media/logo-footer.svg": "/rayblood/static/media/logo-footer.21a72835662cf05dbb24764cc3e88e48.svg",
-    "static/media/logo.svg": "/rayblood/static/media/logo.ccc35e6d4b0ee9a4562143a661f4b412.svg",
-    "index.html": "/rayblood/index.html",
-    "static/media/close-icon.svg": "/rayblood/static/media/close-icon.57ddc4dc208579bfc8d9d0ba8dfee72f.svg",
-    "static/media/menu-icon.svg": "/rayblood/static/media/menu-icon.a286cad9bdcc1a46d0af667a8b4f4432.svg",
-    "main.a3df9160.css.map": "/rayblood/static/css/main.a3df9160.css.map",
-    "main.0e409655.js.map": "/rayblood/static/js/main.0e409655.js.map"
+    "main.css": "/static/css/main.75277836.css",
+    "main.js": "/static/js/main.fce8f0fb.js",
+    "static/media/3d-card.png": "/static/media/3d-card.0df79d796af183e68394.png",
+    "static/media/FuturaPTLight.otf": "/static/media/FuturaPTLight.725c77b4e125ed776783.otf",
+    "static/media/rayblood-card.jpg": "/static/media/rayblood-card.3be37c6c619a3d2e7d4d.jpg",
+    "static/media/blood-icon.svg": "/static/media/blood-icon.9b2c89af2e047f185d672328a7a400ef.svg",
+    "static/media/logo-footer.svg": "/static/media/logo-footer.21a72835662cf05dbb24764cc3e88e48.svg",
+    "static/media/logo.svg": "/static/media/logo.ccc35e6d4b0ee9a4562143a661f4b412.svg",
+    "index.html": "/index.html",
+    "static/media/close-icon.svg": "/static/media/close-icon.57ddc4dc208579bfc8d9d0ba8dfee72f.svg",
+    "static/media/menu-icon.svg": "/static/media/menu-icon.a286cad9bdcc1a46d0af667a8b4f4432.svg",
+    "main.75277836.css.map": "/static/css/main.75277836.css.map",
+    "main.fce8f0fb.js.map": "/static/js/main.fce8f0fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3df9160.css",
-    "static/js/main.0e409655.js"
+    "static/css/main.75277836.css",
+    "static/js/main.fce8f0fb.js"
   ]
 }
