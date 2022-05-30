@@ -702,6 +702,9 @@ transform: rotateY(180deg);
     justify-content: left;
   }
   .card-btn-container .btn-secondary{
+    width: 50%;
+  }
+  .card-btn-container .btn-secondary{
     margin:0;
   }
   .card-input-container{
@@ -709,6 +712,7 @@ transform: rotateY(180deg);
   }
   .card-user-number{
     margin:0;
+    width: 100%;
   }
   .card-pin-number{
     width: 100%;
@@ -719,9 +723,27 @@ transform: rotateY(180deg);
   .card-pin-number label{
     width:100%;
   }
+  .card-right-container{
+    width:100% !important;
+  }
+  .card-right-container .btn-primary{
+    width:50% !important;
+    margin:0 !important;
+  }
+  .card-right-container .btn-secondary{
+    padding: 0 10px !important;
+  }
   .home-intro{
     display:block;
     height: auto !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .home-intro .btn-primary{
+    width:100%;
+  }
+  .home-intro h3 {
+      margin-top: 40px;
   }
   .btn-primary{
     padding: 10px 30px !important;
@@ -799,5 +821,69 @@ transform: rotateY(180deg);
   .close-menu-mobile span{
     font-size:10px;
     color:#B1A1A1;
+  }
+  .home-banner{
+    height: fit-content;
+  }
+  .home-banner .col-md-7 h2{
+    font-size: 40px !important;
+    margin-top: 40px;
+  }
+  .home-banner .col-md-5 .showMobile{
+    display: flex !important;
+    margin-bottom:40px;
+  }
+  .home-banner .col-md-5 .showMobile a{
+    width: 50%;
+  }
+  .demo{
+    width: 100%;
+    height: calc((100vw - 30px) / 1.44);
+    margin-bottom: 40px;
+  }
+  .demo .card-inner{
+    background-size: contain;
+  }
+  .btn-scroll{
+    display:none;
+  }
+  .navbar-footer .row{
+    width: auto;
+    height: auto;
+  }
+  .navbar-footer .col-md-3{
+    height: auto;
+  }
+  .navbar-footer .footer-border-top{
+    border:0;
+  }
+  .navbar-footer .footer-border-top div{
+    border-top: 1px solid #939090;
+  }
+  .navbar-footer .footer-menu-item a{
+    font-size:18px;
+    color: #939090;
+    display:block;
+    margin: 5px 0;
+    font-weight: 600;
+  }
+  .navbar-footer .footer-bottom{
+    padding:0 16px;
+  }
+  .navbar-footer .footer-bottom .footer-logo{
+    float: unset;
+    height: 24px;
+    margin-top: 40px;
+    padding:0;
+  }
+  .navbar-footer .footer-bottom p{
+    float: unset;
+    padding-top:10px;
+  }
+  .navbar-header{
+    height: 100px;
+  }
+  .header-logo{
+    height: 80px;
   }
 }

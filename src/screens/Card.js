@@ -11,6 +11,7 @@ import logo from '../images/logo.svg';
 import arrowLeft from '../images/arrow-left.png';
 import arrowRight from '../images/arrow-right.png';
 import DOMPurify from 'dompurify';
+import $ from "jquery";
 import {
 	Link
   } from "react-router-dom";
@@ -113,6 +114,9 @@ class Card extends React.Component {
 		})
 		// END: GET HOME PAGE TEXT
   }
+  componentDidUpdate(){
+    if($(window).width() <= 600) $('.flip-card').css('zoom',(($(window).width()-30)/535));
+  }
 
   render() {
     return (
@@ -156,6 +160,14 @@ class Card extends React.Component {
           {this.state.showCard == 0 &&
             <Container>
               <Row>
+                <Col md={6} className="showMobile">
+                  <div className="blood-icon-container">
+                    <div className="blood-icon-inner-container">
+                      <div className="red-circle"></div>
+                      <img src={bloodIcon} className="blood-icon"/>
+                    </div>
+                  </div>
+                </Col>
                 <Col md={6}>
                   <h3>
                     {this.state.homeTitle}
@@ -165,7 +177,7 @@ class Card extends React.Component {
                     Obter cartão Individual de irradiação
                   </Button>
                 </Col>
-                <Col md={6}>
+                <Col md={6} className="hideMobile">
                   <div className="blood-icon-container">
                     <div className="blood-icon-inner-container">
                       <div className="red-circle"></div>
@@ -203,43 +215,43 @@ class Card extends React.Component {
                               <div className="flip-card-back">
                                   <div id="created-card-back">
                                       <div className="row">
-                                          <div className="col-md-12">
+                                          <div className="col-12">
                                               <div className="card-info-container" style={{paddingTop:0}}>
                                                   <label>Nome:</label>
                                                   <span>{this.state.cardName}</span>
                                               </div>
                                           </div>
-                                          <div className="col-md-6">
+                                          <div className="col-6">
                                               <div className="card-info-container">
                                                   <label>Nº Utente:</label>
                                                   <span>{this.state.utente}</span>
                                               </div>
                                           </div>
-                                          <div className="col-md-6">
+                                          <div className="col-6">
                                               <div className="card-info-container">
                                                   <label>Data emissão:</label>
                                                   <span>{this.state.cardIssuanceDate}</span>
                                               </div>
                                           </div>
-                                          <div className="col-md-6">
+                                          <div className="col-6">
                                               <div className="card-info-container">
                                                   <label>Médico:</label>
                                                   <span>{this.state.cardDoctor}</span>
                                               </div>
                                           </div>
-                                          <div className="col-md-6">
+                                          <div className="col-6">
                                               <div className="card-info-container">
                                                   <label>Hospital:</label>
                                                   <span>{this.state.cardHospital}</span>
                                               </div>
                                           </div>
-                                          <div className="col-md-12">
+                                          <div className="col-12">
                                               <div className="card-info-container-reason">
                                                   <label>Razão sangue irradiado:</label>
                                                   <span>{this.state.cardReason}</span>
                                               </div>
                                           </div>
-                                          <div className="col-md-6">
+                                          <div className="col-6">
                                               <label className="label-red" style={{marginTop: 5}}>Sangue irradiado indefinidamente!</label>
                                               <div className="card-info-container">
                                                   <label className="label-red">Ou até:</label>
@@ -247,7 +259,7 @@ class Card extends React.Component {
                                               </div>
                                               <label className="label-gray">Mais informações em <a href="#">www.rayblood.pt</a></label>
                                           </div>
-                                          <div className="col-md-6 card-info-logo">
+                                          <div className="col-6 card-info-logo">
                                               <img src={logo} className="footer-logo" alt="logo"/>
                                           </div>
                                       </div>

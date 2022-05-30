@@ -109,12 +109,14 @@ class Home extends React.Component {
                   <h2>
                     Encontre aqui o seu cartão de irradiação da Doença do Enxerto Contra o Hospedeiro Associada à Transfusão
                   </h2>
-                  <Link to="/card">
-                    <Button variant="secondary">
-                      Obter cartão
-                    </Button>
-                  </Link>
-                  <a href="#" className="link-text">Quero saber mais sobre esta doença</a>
+                  <div className="hideMobile">
+                    <Link to="/card">
+                      <Button variant="secondary">
+                        Obter cartão
+                      </Button>
+                    </Link>
+                    <a href="#" className="link-text">Quero saber mais sobre esta doença</a>
+                  </div>
                 </div>
               </Col>
               <Col md={5}>
@@ -123,7 +125,14 @@ class Home extends React.Component {
                     <div className="card-inner" style={{backgroundImage: `url(${raybloodCard})`}}></div>
                   </div>
                 </div>
-                
+                <div className="showMobile">
+                    <Link to="/card">
+                      <Button variant="secondary">
+                        Obter cartão
+                      </Button>
+                    </Link>
+                    <a href="#" className="link-text">Quero saber mais sobre esta doença</a>
+                </div>
               </Col>
             </Row>
           </Container>
@@ -134,6 +143,14 @@ class Home extends React.Component {
         <div id="home-intro" className="home-intro">
           <Container>
             <Row>
+              <Col md={6} className="showMobile">
+                <div className="blood-icon-container">
+                  <div className="blood-icon-inner-container">
+                    <div className="red-circle"></div>
+                    <img src={bloodIcon} className="blood-icon"/>
+                  </div>
+                </div>
+              </Col>
               <Col md={6}>
                 <h3>
                   {this.state.homeTitle}
@@ -143,7 +160,7 @@ class Home extends React.Component {
                   Obter cartão Individual de irradiação
                 </Button>
               </Col>
-              <Col md={6}>
+              <Col md={6} className="hideMobile">
                 <div className="blood-icon-container">
                   <div className="blood-icon-inner-container">
                     <div className="red-circle"></div>

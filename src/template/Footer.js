@@ -12,7 +12,7 @@ import {
 function Footer() {
   return (
     <Navbar className="navbar-footer" expand="lg">
-      <Container>
+      <Container className="hideMobile">
         <Row>
           <Col className="footer-border-top" md={12}>
           </Col>
@@ -49,7 +49,45 @@ function Footer() {
             </div>
           </Col>
         </Row>
-        
+      </Container>
+      <Container className="showMobile">
+        <Row>
+          <div className="footer-border-top col-12">
+            <div></div>
+          </div>
+          <div className="col-6 footer-menu-item">
+            <Link to="/card">Cartão irradiação</Link>
+          </div>
+          <div className="col-6 footer-menu-item">
+            <Link to="/login">Iniciar Sessão</Link>
+          </div>
+          <div className="col-6 footer-menu-item">
+            <a href="#">Web app no telemóvel</a>
+          </div>
+          <div className="col-6 footer-menu-item">
+            <a href="#">Registo profissionais</a>
+          </div>
+          <div className="col-6 footer-menu-item">
+            <Link to="/">O que é RayBlood</Link>
+          </div>
+          <div className="col-6 footer-menu-item">
+            <a href="#">Política de privacidade</a>
+          </div>
+          <div className="col-6 footer-menu-item">
+            <Link to="/question">Colocar uma questão</Link>
+          </div>
+          <div className="col-6 footer-menu-item">
+            <a href="#">Termos e condições</a>
+          </div>
+          <div>
+            <div className="footer-bottom">
+              <img src={logoFooter} className="footer-logo" alt="logo" />
+              <p>
+                © RayBlood.com, all rights reserved! By <a href="#">Dersepa.com</a>
+              </p>
+            </div>
+          </div>
+        </Row>
       </Container>
     </Navbar>
   );
